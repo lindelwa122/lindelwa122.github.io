@@ -1,6 +1,6 @@
 :root {
   --background-color-primary: #fafafa;
-  --background-color-secondary: #fff;
+  --background-color-secondary: #212529;
   --error-message-color: #f00;
   --main-text-color: #fff;
   --secondary-text-color: #212529; }
@@ -10,7 +10,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 25px 20px;
-  font-family: "Mulish", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 11px;
   font-weight: 500;
   line-height: 16px; }
@@ -136,6 +136,77 @@ main#index {
       main#index .project .project-frame img {
         height: 100%;
         width: 100%; }
+
+footer {
+  padding: 25px 20px;
+  background-color: var(--background-color-secondary);
+  color: var(--main-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media only screen and (min-width: 600px) {
+    footer {
+      padding: 25px 60px; } }
+  @media only screen and (min-width: 992px) {
+    footer {
+      padding: 25px 120px; } }
+  footer .headline {
+    font-family: "Inter", sans-serif;
+    font-size: 26px;
+    line-height: 44px;
+    font-weight: 700;
+    text-transform: uppercase; }
+    @media only screen and (min-width: 600px) {
+      footer .headline {
+        font-size: 35px;
+        line-height: 52px; } }
+    @media only screen and (min-width: 992px) {
+      footer .headline {
+        font-size: 47px;
+        line-height: 64px; } }
+  footer .main {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center; }
+    footer .main .links {
+      font-family: "Inter", sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 16px;
+      font-weight: 700;
+      display: flex;
+      gap: 5px; }
+      @media only screen and (min-width: 600px) {
+        footer .main .links {
+          font-size: 12px;
+          line-height: 16px; } }
+      @media only screen and (min-width: 992px) {
+        footer .main .links {
+          font-size: 14px;
+          line-height: 20px; } }
+      footer .main .links a {
+        text-decoration: none;
+        color: var(--main-text-color); }
+        footer .main .links a:hover {
+          cursor: pointer; }
+    footer .main hr {
+      width: 100%; }
+    footer .main .copyright {
+      font-family: "Mulish", sans-serif;
+      font-size: 8px;
+      line-height: 10px;
+      margin: 0; }
+      @media only screen and (min-width: 600px) {
+        footer .main .copyright {
+          font-size: 10px;
+          line-height: 12px; } }
+      @media only screen and (min-width: 992px) {
+        footer .main .copyright {
+          font-size: 12px;
+          line-height: 18px; } }
 
 * {
   box-sizing: content-box; }

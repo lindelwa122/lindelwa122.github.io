@@ -1,0 +1,51 @@
+footer {
+  @include padding;
+  
+  background-color: var(--background-color-secondary);
+  color: var(--main-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .headline {
+    @include display;
+    
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .main {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    
+    .links {
+      @include label;
+      
+      font-weight: 700;
+      display: flex;
+      gap: 5px;
+
+      a {
+        text-decoration: none;
+        color: var(--main-text-color);
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    hr {
+      width: 100%;
+    }
+
+    .copyright {
+      @include body-tiny;
+      margin: 0;
+    }
+  }
+}
