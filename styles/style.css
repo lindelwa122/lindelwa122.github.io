@@ -1,0 +1,48 @@
+:root {
+  --background-color-primary: #fafafa;
+  --background-color-secondary: #fff;
+  --error-message-color: #f00;
+  --main-text-color: #fff;
+  --secondary-text-color: #212529; }
+
+nav {
+  color: var(--secondary-text-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 20px;
+  font-family: "Mulish", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px; }
+  @media only screen and (min-width: 600px) {
+    nav {
+      padding: 25px 60px; } }
+  @media only screen and (min-width: 992px) {
+    nav {
+      padding: 25px 120px; } }
+  @media only screen and (min-width: 600px) {
+    nav {
+      font-size: 12px;
+      line-height: 16px; } }
+  @media only screen and (min-width: 992px) {
+    nav {
+      font-size: 14px;
+      line-height: 20px; } }
+  nav div:last-child {
+    display: none; }
+  nav .links a {
+    color: var(--secondary-text-color);
+    display: none;
+    text-decoration: none; }
+    nav .links a[href="about.html"] {
+      display: block; }
+    nav .links a:hover {
+      cursor: pointer; }
+  nav .title {
+    font-weight: 700; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=style.css.map */

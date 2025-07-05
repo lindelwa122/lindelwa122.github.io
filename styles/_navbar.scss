@@ -1,0 +1,32 @@
+nav {
+  color: var(--secondary-text-color);
+  display: flex;
+  justify-content: space-between;
+  
+  @include padding;
+  @include label; 
+  
+  div:last-child {
+    display: none;
+  }
+  
+  .links {
+    a {
+      color: var(--secondary-text-color);
+      display: none;
+      text-decoration: none;
+
+      &[href="about.html"] {
+        display: block;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .title {
+    font-weight: 700;
+  }
+}
