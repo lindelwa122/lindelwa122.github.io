@@ -1,8 +1,7 @@
 .header {
-  
   &::before {
     content: '';
-    position: absolute;
+    position: fixed;
     inset: 0;
     background: radial-gradient(
       ellipse 40% 90% at 40% 70%,
@@ -23,5 +22,5 @@
 
   display: flex;
   flex-direction: column;
-  height: 402px;
+  min-height: 402px;
 }

@@ -114,10 +114,10 @@ nav {
 .header {
   display: flex;
   flex-direction: column;
-  height: 402px; }
+  min-height: 402px; }
   .header::before {
     content: '';
-    position: absolute;
+    position: fixed;
     inset: 0;
     background: radial-gradient(ellipse 40% 90% at 40% 70%, white 0%, rgba(255, 255, 255, 0.84) 45%, rgba(232, 251, 146, 0.58) 60%, rgba(232, 251, 146, 0.88) 73%, rgba(255, 255, 255, 0.79) 100%);
     z-index: -1;
