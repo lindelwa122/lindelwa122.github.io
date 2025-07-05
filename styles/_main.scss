@@ -1,3 +1,7 @@
+main {
+  flex: 1;
+}
+
 main#index {
   background-color: var(--background-color-primary);
   display: flex;
@@ -51,7 +55,7 @@ main#about {
   }
 
   @include for-tablets {
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     gap: 20px;
 

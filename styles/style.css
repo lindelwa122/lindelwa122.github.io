@@ -108,6 +108,9 @@ nav {
     height: 532px;
     width: 120%; }
 
+main {
+  flex: 1; }
+
 main#index {
   background-color: var(--background-color-primary);
   display: flex;
@@ -172,7 +175,7 @@ main#about {
         line-height: 34px; } }
   @media only screen and (min-width: 600px) {
     main#about {
-      align-items: flex-start;
+      align-items: center;
       display: flex;
       gap: 20px; }
       main#about .profile-frame {
@@ -266,7 +269,12 @@ footer {
 * {
   box-sizing: content-box; }
 
+html, body {
+  height: 100vh; }
+
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0; }
 
