@@ -36,17 +36,33 @@ main#about {
   .profile-frame {
     aspect-ratio: 1;
     border-radius: 20px;
-    object-fit: cover;
     overflow: hidden;
     width: 100%;
-
+    
     img {
       height: 100%;
+      object-fit: cover;
       width: 100%;
     }
   }
 
   p {
     @include headline;
+  }
+
+  @include for-tablets {
+    align-items: flex-start;
+    display: flex;
+    gap: 20px;
+
+    .profile-frame {
+      aspect-ratio: 1;
+      flex-shrink: 0;
+      width: 150px;
+    }
+
+    p {
+      @include body;
+    }
   }
 }
