@@ -29,3 +29,24 @@ main#index {
     }
   }
 }
+
+main#about {
+  @include padding;
+
+  .profile-frame {
+    aspect-ratio: 1;
+    border-radius: 20px;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  p {
+    @include headline;
+  }
+}

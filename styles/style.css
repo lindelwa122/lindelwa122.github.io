@@ -141,6 +141,36 @@ main#index {
         height: 100%;
         width: 100%; }
 
+main#about {
+  padding: 25px 20px; }
+  @media only screen and (min-width: 600px) {
+    main#about {
+      padding: 25px 60px; } }
+  @media only screen and (min-width: 992px) {
+    main#about {
+      padding: 25px 120px; } }
+  main#about .profile-frame {
+    aspect-ratio: 1;
+    border-radius: 20px;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%; }
+    main#about .profile-frame img {
+      height: 100%;
+      width: 100%; }
+  main#about p {
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    line-height: 26px; }
+    @media only screen and (min-width: 600px) {
+      main#about p {
+        font-size: 22px;
+        line-height: 30px; } }
+    @media only screen and (min-width: 992px) {
+      main#about p {
+        font-size: 26px;
+        line-height: 34px; } }
+
 footer {
   padding: 25px 20px;
   background-color: var(--background-color-secondary);
