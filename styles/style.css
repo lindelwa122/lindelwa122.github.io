@@ -33,18 +33,30 @@ nav {
       line-height: 20px; } }
   nav div:last-child {
     display: none; }
+    @media only screen and (min-width: 992px) {
+      nav div:last-child {
+        display: block; } }
   nav.about .links a[href="pages/about.html"] {
     display: none; }
+    @media only screen and (min-width: 992px) {
+      nav.about .links a[href="pages/about.html"] {
+        display: inline-block; } }
   nav.about .links a[href="../index.html"] {
-    display: block; }
-  nav .links a {
-    color: var(--secondary-text-color);
-    display: none;
-    text-decoration: none; }
-    nav .links a[href="pages/about.html"] {
-      display: block; }
-    nav .links a:hover {
-      cursor: pointer; }
+    display: inline-block; }
+  nav .links {
+    display: flex;
+    gap: 45px; }
+    nav .links a {
+      color: var(--secondary-text-color);
+      display: none;
+      text-decoration: none; }
+      @media only screen and (min-width: 992px) {
+        nav .links a {
+          display: inline-block; } }
+      nav .links a[href="pages/about.html"] {
+        display: inline-block; }
+      nav .links a:hover {
+        cursor: pointer; }
   nav .title {
     font-weight: 700; }
 

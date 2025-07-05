@@ -8,28 +8,43 @@ nav {
   
   div:last-child {
     display: none;
+
+    @include for-desktops {
+      display: block;
+    }
   }
 
   &.about {
     .links a {
       &[href="pages/about.html"] {
         display: none;
+
+        @include for-desktops {
+          display: inline-block;
+        }
       }
 
       &[href="../index.html"] {
-        display: block;
+        display: inline-block;
       }
     }      
   }
   
   .links {
+    display: flex;
+    gap: 45px;
+
     a {
       color: var(--secondary-text-color);
       display: none;
       text-decoration: none;
 
+      @include for-desktops {
+        display: inline-block;
+      }
+
       &[href="pages/about.html"] {
-        display: block;
+        display: inline-block;
       }
 
       &:hover {
