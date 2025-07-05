@@ -140,4 +140,8 @@ $font-family-secondary: "Inter", sans-serif;
   @include for-desktops {
     padding: 25px 120px;
   }
+
+  @include for-larger-devices {
+    padding: 35px 180px;
+  }
 }

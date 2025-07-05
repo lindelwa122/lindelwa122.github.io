@@ -34,7 +34,7 @@ main#index {
   }
 }
 
-main#about {
+main#about .wrapper {
   @include padding;
 
   .profile-frame {
@@ -55,18 +55,34 @@ main#about {
   }
 
   @include for-tablets {
-    align-items: center;
     display: flex;
-    gap: 20px;
-
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
     .profile-frame {
       aspect-ratio: 1;
       flex-shrink: 0;
-      width: 150px;
+      width: 25%;
+    }
+    
+    p {
+      @include body;
+    }
+  }
+  
+  @include for-desktops {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    .profile-frame {
+      width: 300px;
     }
 
     p {
-      @include body;
+      font-size: 24px;
+      line-height: 41px;
     }
   }
 }

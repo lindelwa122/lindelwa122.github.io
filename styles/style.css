@@ -20,6 +20,9 @@ nav {
   @media only screen and (min-width: 992px) {
     nav {
       padding: 25px 120px; } }
+  @media only screen and (min-width: 1400px) {
+    nav {
+      padding: 35px 180px; } }
   @media only screen and (min-width: 600px) {
     nav {
       font-size: 12px;
@@ -56,6 +59,9 @@ nav {
   @media only screen and (min-width: 992px) {
     .hero {
       padding: 25px 120px; } }
+  @media only screen and (min-width: 1400px) {
+    .hero {
+      padding: 35px 180px; } }
   .hero .welcome {
     display: flex;
     flex-direction: column;
@@ -144,56 +150,71 @@ main#index {
         height: 100%;
         width: 100%; }
 
-main#about {
+main#about .wrapper {
   padding: 25px 20px; }
   @media only screen and (min-width: 600px) {
-    main#about {
+    main#about .wrapper {
       padding: 25px 60px; } }
   @media only screen and (min-width: 992px) {
-    main#about {
+    main#about .wrapper {
       padding: 25px 120px; } }
-  main#about .profile-frame {
+  @media only screen and (min-width: 1400px) {
+    main#about .wrapper {
+      padding: 35px 180px; } }
+  main#about .wrapper .profile-frame {
     aspect-ratio: 1;
     border-radius: 20px;
     overflow: hidden;
     width: 100%; }
-    main#about .profile-frame img {
+    main#about .wrapper .profile-frame img {
       height: 100%;
       object-fit: cover;
       width: 100%; }
-  main#about p {
+  main#about .wrapper p {
     font-family: "Mulish", sans-serif;
     font-size: 18px;
     line-height: 26px; }
     @media only screen and (min-width: 600px) {
-      main#about p {
+      main#about .wrapper p {
         font-size: 22px;
         line-height: 30px; } }
     @media only screen and (min-width: 992px) {
-      main#about p {
+      main#about .wrapper p {
         font-size: 26px;
         line-height: 34px; } }
   @media only screen and (min-width: 600px) {
-    main#about {
-      align-items: center;
+    main#about .wrapper {
       display: flex;
-      gap: 20px; }
-      main#about .profile-frame {
+      flex-direction: column;
+      align-items: center;
+      text-align: center; }
+      main#about .wrapper .profile-frame {
         aspect-ratio: 1;
         flex-shrink: 0;
-        width: 150px; }
-      main#about p {
+        width: 25%; }
+      main#about .wrapper p {
         font-family: "Mulish", sans-serif;
         font-size: 12px;
         line-height: 16px; } }
     @media only screen and (min-width: 600px) and (min-width: 600px) {
-      main#about p {
+      main#about .wrapper p {
         font-size: 14px;
         line-height: 20px; } }
     @media only screen and (min-width: 600px) and (min-width: 992px) {
-      main#about p {
+      main#about .wrapper p {
         font-size: 16px;
         line-height: 24px; } }
+
+  @media only screen and (min-width: 992px) {
+    main#about .wrapper {
+      flex-direction: row;
+      align-items: center;
+      gap: 20px; }
+      main#about .wrapper .profile-frame {
+        width: 300px; }
+      main#about .wrapper p {
+        font-size: 24px;
+        line-height: 41px; } }
 
 footer {
   padding: 25px 20px;
@@ -208,6 +229,9 @@ footer {
   @media only screen and (min-width: 992px) {
     footer {
       padding: 25px 120px; } }
+  @media only screen and (min-width: 1400px) {
+    footer {
+      padding: 35px 180px; } }
   footer .headline {
     font-family: "Inter", sans-serif;
     font-size: 26px;
