@@ -125,6 +125,10 @@ nav {
     transform: rotate(318deg);
     height: 532px;
     width: 120%; }
+  @media only screen and (min-width: 992px) {
+    .header {
+      width: 100%;
+      aspect-ratio: 1.7; } }
 
 main {
   flex: 1; }
