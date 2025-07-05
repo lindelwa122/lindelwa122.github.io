@@ -1,0 +1,27 @@
+.header {
+  
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse 40% 90% at 40% 70%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, .84) 45%,
+      rgba(232, 251, 146, .58) 60%,
+      rgba(232, 251, 146, .88) 73%,
+      rgba(255, 255, 255, .79) 100%
+    );
+    z-index: -1;
+    transform-origin: 25% 50%;
+    transform: rotate(318deg);
+    height: 532px;
+    width: 120%;
+  }
+
+  // transform: rotate(-12deg);
+
+  display: flex;
+  flex-direction: column;
+  height: 402px;
+}
