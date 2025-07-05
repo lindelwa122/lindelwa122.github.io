@@ -30,11 +30,15 @@ nav {
       line-height: 20px; } }
   nav div:last-child {
     display: none; }
+  nav.about .links a[href="pages/about.html"] {
+    display: none; }
+  nav.about .links a[href="../index.html"] {
+    display: block; }
   nav .links a {
     color: var(--secondary-text-color);
     display: none;
     text-decoration: none; }
-    nav .links a[href="about.html"] {
+    nav .links a[href="pages/about.html"] {
       display: block; }
     nav .links a:hover {
       cursor: pointer; }

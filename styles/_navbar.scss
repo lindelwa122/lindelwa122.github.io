@@ -9,6 +9,18 @@ nav {
   div:last-child {
     display: none;
   }
+
+  &.about {
+    .links a {
+      &[href="pages/about.html"] {
+        display: none;
+      }
+
+      &[href="../index.html"] {
+        display: block;
+      }
+    }      
+  }
   
   .links {
     a {
@@ -16,7 +28,7 @@ nav {
       display: none;
       text-decoration: none;
 
-      &[href="about.html"] {
+      &[href="pages/about.html"] {
         display: block;
       }
 
