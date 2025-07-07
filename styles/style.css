@@ -411,6 +411,9 @@ footer {
           cursor: pointer; }
     footer .main hr {
       width: 100%; }
+      @media only screen and (min-width: 992px) {
+        footer .main hr {
+          width: 50%; } }
     footer .main .copyright {
       font-family: "Mulish", sans-serif;
       font-size: 8px;

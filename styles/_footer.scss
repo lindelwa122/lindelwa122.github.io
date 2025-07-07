@@ -41,6 +41,10 @@ footer {
 
     hr {
       width: 100%;
+
+      @include for-desktops {
+        width: 50%;
+      }
     }
 
     .copyright {
