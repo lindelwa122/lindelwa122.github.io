@@ -125,6 +125,13 @@ nav {
     transform: rotate(318deg);
     height: 532px;
     width: 120%; }
+    @media only screen and (min-width: 600px) {
+      .header::before {
+        background: radial-gradient(ellipse 40% 90% at 40% 70%, white 0%, rgba(255, 255, 255, 0.84) 45%, rgba(232, 251, 146, 0.58) 60%, rgba(232, 251, 146, 0.88) 73%, rgba(255, 255, 255, 0.79) 100%);
+        transform-origin: 0% 0%;
+        transform: rotate(0deg);
+        height: unset;
+        width: 120%; } }
   @media only screen and (min-width: 992px) {
     .header {
       width: 100%;

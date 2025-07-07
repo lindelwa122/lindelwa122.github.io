@@ -16,6 +16,22 @@
     transform: rotate(318deg);
     height: 532px;
     width: 120%;
+
+    @include for-tablets {
+      background: radial-gradient(
+        ellipse 40% 90% at 40% 70%,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, .84) 45%,
+        rgba(232, 251, 146, .58) 60%,
+        rgba(232, 251, 146, .88) 73%,
+        rgba(255, 255, 255, .79) 100%
+      );
+
+      transform-origin: 0% 0%;
+      transform: rotate(0deg);
+      height: unset;
+      width: 120%;
+    }
   }
 
   // transform: rotate(-12deg);
