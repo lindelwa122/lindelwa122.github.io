@@ -128,7 +128,12 @@ nav {
   @media only screen and (min-width: 992px) {
     .header {
       width: 100%;
-      aspect-ratio: 1.7; } }
+      aspect-ratio: 1.7;
+      min-height: unset;
+      max-height: 95vh; } }
+  @media only screen and (min-width: 1400px) {
+    .header {
+      aspect-ratio: 2.2; } }
 
 main {
   flex: 1; }
