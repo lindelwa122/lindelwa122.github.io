@@ -139,11 +139,21 @@ main#index {
   flex-direction: column;
   gap: 80px;
   padding: 80px 20px; }
+  @media only screen and (min-width: 992px) {
+    main#index {
+      padding: 80px;
+      gap: 202px; } }
+  @media only screen and (min-width: 1400px) {
+    main#index {
+      padding: 120px 180px; } }
   main#index .project {
     display: flex;
     flex-direction: column;
     gap: 51px;
     padding: 23px; }
+    @media only screen and (min-width: 600px) {
+      main#index .project {
+        align-items: center; } }
     main#index .project h3 {
       font-family: "Inter", sans-serif;
       font-size: 26px;
@@ -162,6 +172,15 @@ main#index {
       aspect-ratio: 1.39;
       object-fit: contain;
       width: 100%; }
+      @media only screen and (min-width: 600px) {
+        main#index .project .project-frame {
+          width: 70%; } }
+      @media only screen and (min-width: 992px) {
+        main#index .project .project-frame {
+          width: 65%; } }
+      @media only screen and (min-width: 1400px) {
+        main#index .project .project-frame {
+          width: 50%; } }
       main#index .project .project-frame img {
         height: 100%;
         width: 100%; }
