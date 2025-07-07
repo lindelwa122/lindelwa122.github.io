@@ -2,6 +2,7 @@ nav {
   color: var(--secondary-text-color);
   display: flex;
   justify-content: space-between;
+  max-width: 1560px;
   
   @include padding;
   @include label; 
