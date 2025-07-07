@@ -61,10 +61,16 @@
     .infront {
       width: 400px;
       height: 300px;
+      transition: all .5s ease-in-out;
 
       @include for-larger-devices {
         width: 450px;
         height: 350px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
       }
     }
 

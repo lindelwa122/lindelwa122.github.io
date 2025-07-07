@@ -134,11 +134,15 @@ nav {
           height: 338px; } }
     .hero .welcome .infront {
       width: 400px;
-      height: 300px; }
+      height: 300px;
+      transition: all .5s ease-in-out; }
       @media only screen and (min-width: 1400px) {
         .hero .welcome .infront {
           width: 450px;
           height: 350px; } }
+      .hero .welcome .infront:hover {
+        cursor: pointer;
+        transform: scale(1.05); }
     .hero .welcome .infront, .hero .welcome .behind {
       display: none; }
       @media only screen and (min-width: 992px) {
