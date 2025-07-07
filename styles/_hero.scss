@@ -11,9 +11,14 @@
 
   .welcome {
     display: flex;
-    flex-direction: column;
-    height: auto;
-    justify-content: flex-end;
+    width: 100%;
+    
+    >div:first-child {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      justify-content: flex-end;
+    }
 
     h1 {
       @include display;
@@ -28,8 +33,56 @@
       text-transform: uppercase;
     }
 
+    >div:last-child {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      position: relative;
+      padding: 120px 30px;
+    }
+
+    .behind {
+      background-color: rgba($color: #D9D9D9, $alpha: 1);
+      position: absolute;
+      display: none !important;
+      right: 0vh;
+      top: 16vh;
+      z-index: -1;
+      width: 384px;
+      height: 288px;
+
+      @include for-larger-devices {
+        width: 434px;
+        height: 338px;
+      }
+    }
+
+    .infront {
+      width: 400px;
+      height: 300px;
+
+      @include for-larger-devices {
+        width: 450px;
+        height: 350px;
+      }
+    }
+
     .infront, .behind {
       display: none;
+
+      @include for-desktops {
+        display: block;
+        border-radius: 10px;
+        overflow: hidden;
+
+        // aspect-ratio: 1.33;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }

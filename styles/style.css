@@ -76,9 +76,12 @@ nav {
       padding: 35px 180px; } }
   .hero .welcome {
     display: flex;
-    flex-direction: column;
-    height: auto;
-    justify-content: flex-end; }
+    width: 100%; }
+    .hero .welcome > div:first-child {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      justify-content: flex-end; }
     .hero .welcome h1 {
       font-family: "Inter", sans-serif;
       font-size: 26px;
@@ -108,8 +111,43 @@ nav {
         .hero .welcome h2 {
           font-size: 26px;
           line-height: 34px; } }
+    .hero .welcome > div:last-child {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      position: relative;
+      padding: 120px 30px; }
+    .hero .welcome .behind {
+      background-color: #d9d9d9;
+      position: absolute;
+      display: none !important;
+      right: 0vh;
+      top: 16vh;
+      z-index: -1;
+      width: 384px;
+      height: 288px; }
+      @media only screen and (min-width: 1400px) {
+        .hero .welcome .behind {
+          width: 434px;
+          height: 338px; } }
+    .hero .welcome .infront {
+      width: 400px;
+      height: 300px; }
+      @media only screen and (min-width: 1400px) {
+        .hero .welcome .infront {
+          width: 450px;
+          height: 350px; } }
     .hero .welcome .infront, .hero .welcome .behind {
       display: none; }
+      @media only screen and (min-width: 992px) {
+        .hero .welcome .infront, .hero .welcome .behind {
+          display: block;
+          border-radius: 10px;
+          overflow: hidden; } }
+      .hero .welcome .infront img, .hero .welcome .behind img {
+        width: 100%;
+        height: 100%; }
 
 .header {
   display: flex;
