@@ -196,7 +196,9 @@ main#index {
   display: flex;
   flex-direction: column;
   gap: 80px;
-  padding: 80px 20px; }
+  padding: 80px 20px;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 50px; }
   @media only screen and (min-width: 992px) {
     main#index {
       padding: 80px;
@@ -226,7 +228,8 @@ main#index {
     display: flex;
     flex-direction: column;
     gap: 51px;
-    padding: 23px; }
+    padding: 23px;
+    scroll-snap-align: start; }
     @media only screen and (min-width: 600px) {
       main#index .project {
         align-items: center; } }

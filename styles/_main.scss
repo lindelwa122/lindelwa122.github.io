@@ -9,6 +9,8 @@ main#index {
   flex-direction: column;
   gap: 80px;
   padding: 80px 20px;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 50px;
 
   @include for-desktops {
     padding: 80px;
@@ -52,6 +54,7 @@ main#index {
     flex-direction: column;
     gap: 51px;
     padding: 23px;
+    scroll-snap-align: start;
 
     @include for-tablets {
       align-items: center;
