@@ -48,8 +48,8 @@
 
     <main id="index">
         <div class="project">
-            <h3>Colorful Test</h3>
-            <div class="project-frame">
+            <h3 class="view-hidden-right">Colorful Test</h3>
+            <div class="project-frame view-hidden-left">
                     <div class="project-about">
                         <div class="description">A unit testing framework with colorful messages.</div>
                         <div class="icons">
@@ -70,8 +70,8 @@
             </div>
             
             <div class="project">
-                <h3>Epoch</h3>
-                <div class="project-frame">
+                <h3 class="view-hidden-left">Epoch</h3>
+                <div class="project-frame view-hidden-right">
                     <div class="project-about">
                         <div class="description">Epoch is a small version control system inspired by Git.</div>
                         <div class="icons">
@@ -89,8 +89,8 @@
             </div>
             
             <div class="project">
-                <h3>Ximba Web</h3>
-                <div class="project-frame">
+                <h3 class="view-hidden-right">Ximba Web</h3>
+                <div class="project-frame view-hidden-left">
                     <div class="project-about">
                         <div class="description">An event platform for University students</div>
                         <div class="icons">
@@ -111,8 +111,8 @@
             </div>
             
             <div class="project">
-                <h3>Java Text UI</h3>
-                <div class="project-frame">
+                <h3 class="view-hidden-left">Java Text UI</h3>
+                <div class="project-frame view-hidden-right">
                     <div class="project-about">
                         <div class="description">TextUI is a library that lets you draw elements in the terminal using a box-model approach, inspired by HTML.</div>
                         <div class="icons">
@@ -133,8 +133,8 @@
             </div>
             
             <div class="project">
-                <h3>JS Dom Wizard</h3>
-                <div class="project-frame">
+                <h3 class="view-hidden-right">JS Dom Wizard</h3>
+                <div class="project-frame view-hidden-left">
                     <div class="project-about">
                         <div class="description">JavaScript library that makes DOM manipulation easy and more managable.</div>
                         <div class="icons">
@@ -155,8 +155,8 @@
             </div>
             
             <div class="project">
-                <h3>Life Simulation</h3>
-                <div class="project-frame">
+                <h3 class="view-hidden-left">Life Simulation</h3>
+                <div class="project-frame view-hidden-right">
                     <div class="project-about">
                         <div class="description">Creating small creatures that can reason and make complex decisions.</div>
                         <div class="icons">
@@ -253,6 +253,19 @@
         document.querySelector(".life-simulation-gh").addEventListener("click", () => {
             window.open("https://github.com/lindelwa122/life-simulation", "_blank");
         });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        });
+
+        const hiddenElementsLeft = document.querySelectorAll(".view-hidden-left");
+        const hiddenElementsRight = document.querySelectorAll(".view-hidden-right");
+        hiddenElementsLeft.forEach((el) => observer.observe(el));
+        hiddenElementsRight.forEach((el) => observer.observe(el));
 
     </script>
 </body>

@@ -204,6 +204,24 @@ main#index {
   @media only screen and (min-width: 1400px) {
     main#index {
       padding: 120px 180px; } }
+  main#index .view-hidden-left {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s; }
+  main#index .view-hidden-right {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    overflow: hidden;
+    transition: all 1s; }
+  main#index .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0); }
+  @media (prefers-reduced-motion: reduce) {
+    main#index .view-hidden-left, main#index .view-hidden-right {
+      transition: none; } }
   main#index .project {
     display: flex;
     flex-direction: column;
